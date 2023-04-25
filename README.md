@@ -11,23 +11,23 @@ npm で npm install http-server と入力。 http-server をインストール
 
 4.js ファイルで非同期処理を記述
 
-<!-- $(() => {
-  console.log("ajax start");
-  $.ajax({　・・・①
-    type: "GET",・・・②
-    dataType: "json",・・・③
-    url: "./member.json",・・・④
-  })
-    .done((data) => {・・・⑤
-      console.log("success", data);
-    })
-    .fail((error) => {・・・⑥
-      console.log("fail", error);
-    })
-    .always(() => {・・・⑦
-      console.log("complete");
-    });
-}); -->
+$(() => {
+console.log("ajax start");
+$.ajax({　・・・①
+type: "GET",・・・②
+dataType: "json",・・・③
+url: "./member.json",・・・④
+})
+.done((data) => {・・・⑤
+console.log("success", data);
+})
+.fail((error) => {・・・⑥
+console.log("fail", error);
+})
+.always(() => {・・・⑦
+console.log("complete");
+});
+});
 
 ①：ajax()で ajax 通信をすることができる。ajax 通信の引数にオブジェクトを渡すことで色々設定できる。
 ②：リクエストを指定。今回は取得をするので"GET"を指定。
