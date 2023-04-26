@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
@@ -13,6 +14,29 @@
     <script src="./index.js"></script>
   </head>
   <body>
-    <button id="btn">ボタン</button>
-  </body>
+    <div class="container">
+      <h1>メンバーリスト</h1>
+      <label >      
+          <select class="members">
+            <option hidden>選択してください</option>
+            <option value="profile1">土井淳司</option>
+            <option value="profile2">テストユーザー</option>
+            <option value="profile3">田中　太郎</option>
+            <option value="profile4">佐藤　一郎</option>
+            <option value="profile5">坂本　竜馬</option>
+            <option value="profile6">太田　純一</option>
+            <option value="profile7">一般ユーザー1</option>
+            <option value="profile8">サンプル次郎</option>
+            <option value="profile9">時任　渡</option>
+            <option value="profile10">後藤　令</option>
+            <option value="profile11">桜井　達也</option>
+            <option value="profile12">大阪　梅田</option>
+        </select>
+        <ul id="memberList"></ul>
+      </label>
+      <!-- <p id="content"></p>
+      <p id="error"></p>
+      <button id="btn">ボタン</button> -->
+    </div>
+
 </html>
